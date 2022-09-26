@@ -7,10 +7,10 @@
 body {
   margin: 0;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 h1,
-h2,
 h3 {
   text-align: center;
   margin: 0;
@@ -22,6 +22,7 @@ h1 {
 
 h2 {
   font-size: 48px;
+  text-align: left;
 }
 
 h3 {
@@ -94,7 +95,9 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
-.yoga-link {
+.yoga-link,
+.weather-link,
+.yogurt-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
@@ -107,5 +110,30 @@ p {
   font-size: 18px;
 }
 .contact {
+  display: block;
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  body {
+    text-align: center !important;
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    display: none;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
 }
